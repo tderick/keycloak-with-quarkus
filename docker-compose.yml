@@ -32,7 +32,7 @@ services:
     command: start --optimized --proxy edge --hostname=${VIRTUAL_HOST}
 
 volumes:
-  postgres_keycloak:
+  postgres_keycloakdata:
 
 #Use this configuration in production with nginx-proxy container
 networks:
