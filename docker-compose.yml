@@ -29,7 +29,7 @@ services:
       KEYCLOAK_ADMIN_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD}
     image: quay.io/keycloak/keycloak:${KEYCLOAK_VERSION}
     restart: unless-stopped
-    command: start --optimized --proxy edge --hostname=${HOSTNAME}
+    command: start --optimized --proxy edge --hostname=${VIRTUAL_HOST}
 
 volumes:
   postgres_keycloak:
